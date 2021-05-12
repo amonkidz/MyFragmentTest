@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Q1Fragment" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Q2text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q2. DBMS 분석시 고려사항으로 거리가 먼 것은?"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/Q2_1checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="가용성" />
+
+            <CheckBox
+                android:id="@+id/Q2_2checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="성능" />
+
+            <CheckBox
+                android:id="@+id/Q2_3checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="네트워크 구성도" />
+
+            <CheckBox
+                android:id="@+id/Q2_4checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="상호 호환성" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Maingo"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="메인으로" />
+
+                <Button
+                    android:id="@+id/Q2quit"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="정답 확인" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
